@@ -1,9 +1,10 @@
 #include <graphics.h>
+#include <conio.h>
 
 int main()
 {
-    // Create graphics window
-    initwindow(800, 600, "Basic Graphics Primitives");
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"");
 
     // 1. Straight Line
     line(50, 100, 250, 100);
@@ -21,10 +22,4 @@ int main()
 
     // Keep the window open
     getch();
-
-    // Close graphics window
-    closegraph();
-
-    return 0;
 }
-      
